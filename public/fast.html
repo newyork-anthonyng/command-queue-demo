@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  </head>
+
+  <body>
+    <script src="/fast/third-party.js"></script>
+
+    <script>
+      window.queue = [];
+      window.greet = window.greet || function(name) {
+        queue.push(name);
+      }
+
+      greet('George');
+      greet('John');
+      greet('Thomas');
+    </script>
+  </body>
+</html>
